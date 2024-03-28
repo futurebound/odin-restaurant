@@ -20,14 +20,15 @@
 }
 
 body {
-  display: grid;
-
+  display: flex;  
+  flex-direction: column;
 }
 
 header {
   top: 0;
   position: sticky;
   
+  width: 100%;
   display: flex;
   padding: 12px 16px;
   align-items: center;
@@ -46,25 +47,59 @@ header {
   color: var(--fuchsia-950);
 }
 
-nav {
+header nav {
   margin-left: auto;
 }
 
-nav button {
+button {
   border: none;
   color: white;
+  cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   margin-left: 16px;
   padding: 8px 16px;
   border-radius: 8px;
   background-color: var(--fuchsia-950);
+  transition: all 100ms ease-in-out;
 }
 
-nav button:hover {
+button:hover {
   /* border: 2px solid #4a044e; */
   color: var(--fuchsia-200);
   background-color: var(--fuchsia-600);
   box-shadow: 0 0 5px var(--fuchsia-800);
+  text-shadow: 0 0 5px var(--fuchsia-800);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  background-color: var(--fuchsia-300);
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+  /* margin-left: 24px; */
+  color: var(--fuchsia-950);
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+}
+
+a:hover {
+  color: white;
   text-shadow: 0 0 5px var(--fuchsia-800);
 }
