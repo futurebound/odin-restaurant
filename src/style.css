@@ -70,7 +70,6 @@ button {
 }
 
 button:hover {
-  /* border: 2px solid #4a044e; */
   color: var(--fuchsia-200);
   background-color: var(--fuchsia-600);
   box-shadow: 0 0 5px var(--fuchsia-800);
@@ -82,8 +81,6 @@ button:hover {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  /* gap: 48px; */
-  /* margin-bottom: 48px; */
   padding-bottom: 10%;
 }
 
@@ -91,9 +88,6 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  /* margin-top: 48px; */
-  /* margin-bottom: 48px; */
-
   width: 100%;
   height: 100%;
   border: 2px solid black;
@@ -114,6 +108,21 @@ button:hover {
 
 .info h1 {
   margin-bottom: 12px;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+.menu-img {
+  width: 100%;
+}
+
+.side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 footer {
@@ -144,7 +153,6 @@ footer nav {
 
 a {
   text-decoration: none;
-  /* margin-left: 24px; */
   color: var(--fuchsia-950);
   font-weight: bold;
   transition: all 100ms ease-in-out;

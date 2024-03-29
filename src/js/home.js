@@ -1,4 +1,4 @@
-import FoodOne from "../img/food-one.jpg";
+import homeImgPath from "../img/home.jpg";
 import { LOREM_TEXT } from "./utils";
 import generateTextElement from "./utils";
 
@@ -23,7 +23,7 @@ const loadCarousel = () => {
   const carouselDiv = document.createElement("div");
   carouselDiv.classList.add("carousel");
   const foodOne = new Image();
-  foodOne.src = FoodOne;
+  foodOne.src = homeImgPath;
   foodOne.alt = "photo of food";
 
   const photoCredit = document.createElement("p");

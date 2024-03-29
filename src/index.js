@@ -15,3 +15,9 @@ homeButton.addEventListener("click", () => {
   const homeDiv = loadHome();
   contentDiv.appendChild(homeDiv);
 });
+
+menuButton.addEventListener("click", () => {
+  contentDiv.replaceChildren();
+  const menuDiv = loadMenu();
+  contentDiv.appendChild(menuDiv);
+});
