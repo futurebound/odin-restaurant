@@ -21,3 +21,9 @@ menuButton.addEventListener("click", () => {
   const menuDiv = loadMenu();
   contentDiv.appendChild(menuDiv);
 });
+
+aboutButton.addEventListener("click", () => {
+  contentDiv.replaceChildren();
+  const aboutDiv = loadAbout();
+  contentDiv.appendChild(aboutDiv);
+});

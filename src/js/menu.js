@@ -1,4 +1,5 @@
-import { LOREM_TEXT } from "./utils";
+"use strict";
+
 import generateTextElement from "./utils";
 import breakfastImgPath from "../img/breakfast.jpg";
 import breakfastMenuImgPath from "../img/breakfast-menu.png";
