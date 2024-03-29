@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress",
+    "gh": "git subtree push --prefix dist origin gh-pages",
     "serve": "webpack-dev-server --open",
     "start": "webpack serve --open",
     "watch": "webpack --progress --watch"
